@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="login-card">
+            <h2>Login</h2>
+            <p>
+              Enter your credentials to access a world of travel opportunities,
+              personalized itineraries, and exclusive deals. Let's explore the world
+              together!
+            </p>
+            <form id="loginForm">
+              <div class="input-group">
+                <i class="fas fa-user icon"></i>
+                <input type="email" id="email" placeholder="Email" required />
+              </div>
+              <div class="input-group">
+                <i class="fas fa-lock icon"></i>
+                <input type="password" id="password" placeholder="Mot de passe" required/>
+              </div>
+              <button type="submit">Login Now</button>
+              <div id="errorMessage" class="error-message" style="display: none">
+                <i class="fas fa-exclamation-circle"></i> Mot de passe incorrect ou
+                utilisateur non reconnu.
+              </div>
+            </form>
+      </div>
+    </div>
+      <div class="right">
+        <div class="animation-container">
+            <img src="assets/image/loginImage.png" alt="Illustration de voyage" class="main-image" />
+            <img src="assets/image/plane.png" alt="Avion" class="plane"/>
+        </div>
+    </div>    
+    </div>
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>

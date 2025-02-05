@@ -1,0 +1,38 @@
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left {
+      width: 100%;
+      padding: 30px;
+    }
+  
+    .right {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    button{
+      width: 100%;
+    }
+
+    .login-card {
+      width: 100%;
+    }
+
+    .plane {
+      top: -60px;
+    }
+
+    .right img {
+      bottom: 7rem;
+      width: 90%;
+    }
+  }
