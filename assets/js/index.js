@@ -1,6 +1,7 @@
 
 
-window.addEventListener("scroll", function () {
+
+window.addEventListener("scroll", () => {
     const navbar = document.querySelector(".navbar");
     if (window.scrollY > 50) {
         navbar.classList.add("scrolled");
@@ -34,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const statsSection = document.querySelector(".stats");
         const sectionPosition = statsSection.getBoundingClientRect().top;
         const screenPosition = window.innerHeight;
-
         if (sectionPosition < screenPosition) {
             animateNumbers();
             window.removeEventListener("scroll", handleScroll); 
@@ -43,3 +43,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener("scroll", handleScroll);
 });
+
+// Section recommend
+window.addEventListener("scroll", function() {
+    let section = document.querySelector(".recommend-section");
+    let position = section.getBoundingClientRect().top; 
+    let screenHeight = window.innerHeight; 
+
+    if (position < screenHeight * 0.8) { 
+        section.classList.add("show-animate");
+    } else {
+        section.classList.remove("show-animate");
+    }
+});
+
