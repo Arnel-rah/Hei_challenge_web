@@ -8,6 +8,7 @@
   --white-color: #f2f2f2;
   --black-color: #010101;
   --terty-color: #90c2e6;
+  --button-font-weight : 600;
 }
 
 * {
@@ -92,9 +93,11 @@ body{
 
 .signout-button {
     background: var(--primary-color);
-    color: white;
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: var(--button-font-weight);
     border: none;
-    padding: 8px 16px;
+    padding: 10px 19px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -133,6 +136,8 @@ body{
     padding-left: 40px; 
     width: 100%; 
 }
+
+
 
 .hero-content h1 {
     font-size: 2rem;
@@ -200,20 +205,6 @@ body{
     opacity: 0.8;
 }
 
-
-@media (max-width: 900px) {
-    .hero-card {
-        flex-direction: column;
-    }
-    .hero-left, .hero-right {
-        flex: none;
-        width: 100%;
-    }
-    .hero-right {
-        padding: 20px;
-    }
-}
-
 .recommend-section {
     padding: 5rem;
     background-color: #f9f9f9;
@@ -264,8 +255,8 @@ body{
 }
 
 .recommend-content p {
-    font-size: 1rem;
-    color: #555;
+    font-size: 1.2rem;
+    color: #2a2929;
     line-height: 1.5;
 }
 
@@ -273,7 +264,9 @@ body{
     padding: 0.75rem 1.5rem; 
     font-size: 1rem;
     background-color: var(--primary-color); 
-    color: #fff; 
+    color: var(--white-color); 
+    font-size: 1rem;
+    font-weight: var(--button-font-weight);
     border: none; 
     border-radius: 4px; 
     cursor: pointer; 
@@ -302,10 +295,9 @@ body{
 }
 
 .stat-item p {
-    font-size: 0.875rem;
-    color: #555;
+    font-size: 1rem;
+    color: #232222;
 }
-
 
 .stat-number {
     font-size: 4rem; 
@@ -321,8 +313,8 @@ body{
 }
 
 .recommend-section .recommend-container {
-    transform: scale(.6);
-    transition: transform 0.5s ease-in-out;
+    transform: scale(.4);
+    transition: transform 0.8s ease-in-out;
     opacity: 0; 
 }
 
