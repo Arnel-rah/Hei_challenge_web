@@ -6,6 +6,12 @@
     <title>HOME JCRAM'V</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
     </style>
 </head>
@@ -77,8 +83,157 @@
         </div>
     </section>
     <section class="top-destination">
-        
+        <div class="title">
+            <h2>Top Destination</h2>
+            <p>Explore our best destinations</p>
+        </div>
+        <div class="destination-container">
+            <!-- Carte 1: Poitiers -->
+            <div class="destination-card">
+                <img src="assets/image/topdestination1.jpg" alt="Poitiers">
+                <h3>Poitiers</h3>
+                <p>2 Days 3 Nights</p>
+                <div class="features">
+                    <span><i class="fas fa-plane"></i> Plane</span>
+                    <span><i class="fas fa-hotel"></i> Hotel</span>
+                    <span><i class="fas fa-car"></i> Transfer</span>
+                    <span><i class="fas fa-ticket-alt"></i> Activity</span>
+                </div>
+                <div class="price-rating">
+                    <span class="price">98.90$ / person</span>
+                    <span class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i> <!-- Étoile vide -->
+                        (4.3)
+                    </span>
+                </div>
+            </div>
+    
+            <!-- Carte 2: Spain -->
+            <div class="destination-card">
+                <img src="assets/image/topdestination2.jpg" alt="Spain">
+                <h3>Spain</h3>
+                <p>6 Days 7 Nights</p>
+                <div class="features">
+                    <span><i class="fas fa-plane"></i> Plane</span>
+                    <span><i class="fas fa-hotel"></i> Hotel</span>
+                    <span><i class="fas fa-car"></i> Transfer</span>
+                    <span><i class="fas fa-ticket-alt"></i> Activity</span>
+                </div>
+                <div class="price-rating">
+                    <span class="price">98.90$ / person</span>
+                    <span class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> <!-- Toutes les étoiles pleines -->
+                        (4.7)
+                    </span>
+                </div>
+            </div>
+    
+            <!-- Carte 3: Kenya -->
+            <div class="destination-card">
+                <img src="assets/image/topdestination3.jpg" alt="Kenya">
+                <h3>Kenya</h3>
+                <p>8 Days 9 Nights</p>
+                <div class="features">
+                    <span><i class="fas fa-plane"></i> Plane</span>
+                    <span><i class="fas fa-hotel"></i> Hotel</span>
+                    <span><i class="fas fa-car"></i> Transfer</span>
+                    <span><i class="fas fa-ticket-alt"></i> Activity</span>
+                </div>
+                <div class="price-rating">
+                    <span class="price">80$ / person</span>
+                    <span class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        (4.9)
+                    </span>
+                </div>
+            </div>
+    
+            <!-- Carte 4: Hallstatt -->
+            <div class="destination-card">
+                <img src="assets/image/topdestination4.jpg" alt="Hallstatt">
+                <h3>Hallstatt</h3>
+                <p>3 Days 4 Nights</p>
+                <div class="features">
+                    <span><i class="fas fa-plane"></i> Plane</span>
+                    <span><i class="fas fa-hotel"></i> Hotel</span>
+                    <span><i class="fas fa-car"></i> Transfer</span>
+                    <span><i class="fas fa-ticket-alt"></i> Activity</span>
+                </div>
+                <div class="price-rating">
+                    <span class="price">108.90$ / person</span>
+                    <span class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        (5.0)
+                    </span>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section class="reservation-section">
+        <div class="reservation-container">
+          <div class="reservation-text">
+            <h2>Life is short,<br>the world is wide</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis harum natus ex, sit numquam eligendi illum cupiditate?</p>
+            <h3>Here our Reservation</h3>
+          </div>
+          <form class="reservation-form" onsubmit="return false;">
+            <div class="form-group">
+              <label for="location">Location</label>
+              <div class="input-container">
+                <i class="fa fa-paper-plane"></i>
+                <input type="text" id="location" placeholder="Where are you going">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="checkin">Check in</label>
+              <div class="input-container">
+                <i class="fa fa-calendar"></i>
+                <input type="date" id="checkin" placeholder="jj/mm/aaaa">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="checkout">Check out</label>
+              <div class="input-container">
+                <i class="fa fa-calendar"></i>
+                <input type="date" id="checkout" placeholder="jj/mm/aaaa">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <div class="input-container">
+                <i class="fa fa-envelope"></i>
+                <input type="email" id="email" placeholder="example@mail.com">
+              </div>
+            </div>
+            <button type="submit" class="reservation-btn" onclick="showConfirmation()">Make Reservation</button>
+            <p class="confirmation-message">
+                <i class="fa fa-check-circle"></i> Reservation successfully made!
+              </p>
+            </form>
+        </div>
+        <div class="reservation-image">
+          <img src="assets/image/about3.jpg" alt="Kayaking Image">
+        </div>
+      </section>
+      
+    
     <script src="assets/js/index.js"></script>
 </body>
 

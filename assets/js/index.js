@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", handleScroll);
 });
 
-// Section recommend
+
 window.addEventListener("scroll", function() {
     let section = document.querySelector(".recommend-section");
     let position = section.getBoundingClientRect().top; 
@@ -56,4 +56,31 @@ window.addEventListener("scroll", function() {
         section.classList.remove("show-animate");
     }
 });
+
+window.addEventListener("scroll", function () {
+    let section = document.querySelector(".top-destination");
+    let position = section.getBoundingClientRect().top;
+    let screenHeight = window.innerHeight;
+
+    if (position < screenHeight * 0.8) {
+        section.classList.add("show-animate");
+    } else {
+        section.classList.remove("show-animate");
+    }
+});
+
+function showConfirmation() {
+    const form = document.querySelector(".reservation-form");
+    const confirmationMessage = form.querySelector(".confirmation-message");
+  
+    form.classList.add("show-message");
+  
+    setTimeout(() => {
+      form.classList.remove("show-message");
+    }, 3000); 
+  
+    form.reset();
+  }
+  
+  
 

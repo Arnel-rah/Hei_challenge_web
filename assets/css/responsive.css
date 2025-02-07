@@ -45,4 +45,41 @@
   .hero-right {
     padding: 20px;
   }
+  .top-destination {
+    padding: 1rem;
 }
+
+.top-destination .title h2 {
+    font-size: 1.5rem;
+}
+
+.destination-card img {
+    height: 180px; 
+}
+
+.destination-card h3 {
+    font-size: 1rem;
+}
+
+.destination-card p {
+    font-size: 0.8rem;
+}
+
+.features span {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+}
+
+.price-rating .price {
+    font-size: 0.9rem;
+}
+.reservation-section {
+  flex-direction: column;
+}
+
+.reservation-container {
+  max-width: 100%;
+}
+}
+
+
