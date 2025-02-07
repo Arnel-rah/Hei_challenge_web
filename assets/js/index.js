@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     number.textContent = targetValue; 
                     clearInterval(interval); 
                 }
-            }, 20); 
+            }, 100); 
         });
     };
 
