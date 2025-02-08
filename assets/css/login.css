@@ -141,6 +141,7 @@ button {
   animation: zoomPlane 4s infinite ease-in-out;
 }
 
+
 @keyframes float {
   0%,
   100% {
@@ -162,6 +163,7 @@ button {
     transform: scale(0.4);
   }
 }
+
 
 .error-message {
   display: flex;
