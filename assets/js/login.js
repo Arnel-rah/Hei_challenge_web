@@ -1,8 +1,7 @@
 
 
 
-
-document.getElementById("loginForm").addEventListener("submit", function(event) {
+document.getElementById("loginForm").addEventListener("submit", (event) => {
     event.preventDefault(); 
     let email = document.getElementById("email").value.trim();
     let password = document.getElementById("password").value.trim();
@@ -31,6 +30,8 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         errorMessage.style.display = "flex";
     }
 });
+
+
 
 
 

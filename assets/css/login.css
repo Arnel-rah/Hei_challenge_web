@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap");
 
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap");
 :root {
   --primary-color: #0d7cc6;
   --secondary-color: #f68712;
   --white-color: #f2f2f2;
   --black-color: #010101;
   --terty-color: #90c2e6;
+  --message-error-color : #b21f26;
 }
 
 * {
@@ -30,6 +32,7 @@
   background: #ffffff;
   
 }
+
 .login-card {
   background: #ffffff;
   padding: 30px;
@@ -169,7 +172,7 @@ button {
   display: flex;
   align-items: center;
   background: #ffdddd;
-  color: #b21f26;
+  color: var(--message-error-color) ;
   padding: 15px;
   margin-top: 10px;
   border-radius: 5px;

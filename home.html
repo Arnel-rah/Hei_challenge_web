@@ -12,8 +12,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <style>
-    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -28,9 +26,13 @@
             <li><a href="#">Hotel</a></li>
             <li><a href="#">Reservation</a></li>
         </ul>
-        <a href="index.html"><button class="signout-button">Sign out</button></a>
+        <div class="nav-right">
+            <button class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a href="index.html"><button class="signout-button">Sign out</button></a>
+        </div>
     </nav>
-
     <section class="hero-card">
         <div class="hero-left">
             <div class="hero-content">
@@ -44,12 +46,12 @@
         </div>
         <div class="hero-right">
             <div class="hero-image">
-                <img src="assets/image/girlTravel.png" alt="Voyageuse">
+                <img src="assets/image/girlTravel.png" alt="Voyageuse" class="voyageuse">
                 <img src="assets/image/fleche-courbe.png" alt="Flèche" class="arrow">
             </div>
         </div>
     </section>    
-    <section class="recommend-section show-animate">
+    <section  class="recommend-section show-animate">
         <div class="recommend-container">
             <div class="recommend-images">
                 <img src="assets/image/about1.jpg" alt="Place 1">
@@ -88,7 +90,6 @@
             <p>Explore our best destinations</p>
         </div>
         <div class="destination-container">
-            <!-- Carte 1: Poitiers -->
             <div class="destination-card">
                 <img src="assets/image/topdestination1.jpg" alt="Poitiers">
                 <h3>Poitiers</h3>
@@ -106,13 +107,11 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i> <!-- Étoile vide -->
+                        <i class="far fa-star"></i> 
                         (4.3)
                     </span>
                 </div>
             </div>
-    
-            <!-- Carte 2: Spain -->
             <div class="destination-card">
                 <img src="assets/image/topdestination2.jpg" alt="Spain">
                 <h3>Spain</h3>
@@ -130,13 +129,11 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> <!-- Toutes les étoiles pleines -->
+                        <i class="fas fa-star"></i> 
                         (4.7)
                     </span>
                 </div>
             </div>
-    
-            <!-- Carte 3: Kenya -->
             <div class="destination-card">
                 <img src="assets/image/topdestination3.jpg" alt="Kenya">
                 <h3>Kenya</h3>
@@ -159,8 +156,6 @@
                     </span>
                 </div>
             </div>
-    
-            <!-- Carte 4: Hallstatt -->
             <div class="destination-card">
                 <img src="assets/image/topdestination4.jpg" alt="Hallstatt">
                 <h3>Hallstatt</h3>
@@ -185,8 +180,7 @@
             </div>
         </div>
     </section>
-
-    <section class="reservation-section">
+    <section id="reservation" class="reservation-section">
         <div class="reservation-container">
           <div class="reservation-text">
             <h2>Life is short,<br>the world is wide</h2>
@@ -232,33 +226,59 @@
           <img src="assets/image/about3.jpg" alt="Kayaking Image">
         </div>
       </section>
-
       <section class="hotel-section">
         <h2>Our Hotel</h2>
         <p>You can see one of our hotel destinations</p>
         <div class="hotel-container">
-          <div class="hotel-item small">
+          <div class="hotel-item1">
             <img src="assets/image/hotel1.jpg" alt="Hotel Room 1">
-          </div>
-          <div class="hotel-item small">
             <img src="assets/image/hotel2.jpg" alt="Hotel Pool">
           </div>
-          <div class="hotel-item large">
+          <div class="hotel-item2">
             <img src="assets/image/hotel3.jpg" alt="Large Hotel Image">
           </div>
-          <div class="hotel-item small">
+          <div class="hotel-item3">
             <img src="assets/image/hotel4.jpg" alt="Hotel Room 2">
-          </div>
-          <div class="hotel-item small">
             <img src="assets/image/hotel5.jpg" alt="Hotel Kitchen">
           </div>
         </div>
       </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-item">
+            <h2>JCRAM'V</h2>
+            <p>
+              Explore the world with JCRAM'V and discover unforgettable experiences. 
+              From the moment you arrive, we're dedicated to making your journey extraordinary.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h3>Contact US</h3>
+            <p>123 rue Radama Soavimasoandro</p>
+            <p>hei.arnel@gmail.com</p>
+            <p>+261-38-59-262-10</p>
+          </div>
+          <div class="footer-item">
+            <h3>Sign up to new paper</h3>
+            <form id="newsletterForm">
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">Send</button>
+              </form>
+              <div id="formMessage" class="hidden">Thank you for subscribing!</div>              
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Design by Arnel RAHARINANDRASANA</p>
+        </div>
+      </footer>
       
-      
-    
     <script src="assets/js/index.js"></script>
 </body>
-
 </html>
 
