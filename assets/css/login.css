@@ -1,13 +1,13 @@
 
 
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap");
+
 :root {
   --primary-color: #0d7cc6;
   --secondary-color: #f68712;
   --white-color: #f2f2f2;
   --black-color: #010101;
   --terty-color: #90c2e6;
-  --message-error-color : #b21f26;
 }
 
 * {
@@ -17,12 +17,12 @@
   font-family: "Quicksand", sans-serif;
 }
 
-.container {
+.wrapper-container {
   display: flex;
   height: 100vh;
 }
 
-.left {
+.left-panel {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -30,10 +30,9 @@
   align-items: center;
   padding: 50px;
   background: #ffffff;
-  
 }
 
-.login-card {
+.auth-card {
   background: #ffffff;
   padding: 30px;
   border-radius: 12px;
@@ -43,7 +42,12 @@
   text-align: center;
 }
 
-#loginForm {
+.auth-card p{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#authForm {
   width: 100%;
   max-width: 450px;
 }
@@ -64,7 +68,7 @@ p {
   margin: 0 auto 15px;
 }
 
-.input-group {
+.field-group {
   display: flex;
   align-items: center;
   background: #f1f1f1;
@@ -74,13 +78,13 @@ p {
   margin-bottom: 15px;
 }
 
-.input-group .icon {
+.field-group .field-icon {
   margin-right: 12px;
   font-size: 20px;
   color: #555;
 }
 
-.input-group input {
+.field-group input {
   border: none;
   outline: none;
   background: none;
@@ -102,48 +106,47 @@ button {
   font-weight: bold;
 }
 
-.right {
+.right-panel {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--primary-color);
-  background-image: url(/assets/image/loginBackgroud.png);
+  background-image: url(/assets/img/loginBackgroud.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.right img {
+.right-panel img {
   width: 90%;
   max-height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.animation-container {
+.image-animation-wrapper {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main-image {
+.main-illustration {
   animation: float 3s infinite ease-in-out;
   position: relative;
   top: 90px;
 }
 
-.plane {
+.plane-icon {
   position: absolute;
-  top: -120px;
+  top: -170px;
   left: 50px;
   width: 40px;
   opacity: 1;
   transform: scale(0.7);
   animation: zoomPlane 4s infinite ease-in-out;
 }
-
 
 @keyframes float {
   0%,
@@ -157,18 +160,15 @@ button {
 
 @keyframes zoomPlane {
   0% {
-    transform: scale(0.5);
+    transform: scale(0);
   }
-  50% {
-    transform: scale(0.8);
-  }
+  
   100% {
-    transform: scale(0.4);
+    transform: scale(0.5);
   }
 }
 
-
-.error-message {
+.error-display {
   display: flex;
   align-items: center;
   background: #ffdddd;
@@ -180,7 +180,7 @@ button {
   font-weight: bold;
 }
 
-.error-message i {
+.error-display i {
   margin-right: 8px;
   font-size: 1.2rem;
 }

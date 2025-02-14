@@ -1,5 +1,48 @@
-/* MOBILE */
+
 @media (max-width: 768px) {
+
+  .wrapper-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-panel{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .right-panel {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .plane-icon{
+    position: absolute;
+    top: -45px;
+    left: -25px;
+    
+  }
+
+  .auth-card {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  button {
+    width: 80%;
+  }
+
+  .right-panel img {
+    width: 100%;
+    max-height: 300px;
+  }
+
+  .main-illustration{
+    position: relative;
+    bottom: 70px;
+  }
+
   .container {
     flex-direction: column;
   }
@@ -40,9 +83,11 @@
     bottom: 7rem;
     width: 90%;
   }
+  
   .hero-card {
     flex-direction: column;
   }
+
   .hero-left,
   .hero-right {
     flex: none;
@@ -51,19 +96,25 @@
 
   .hero-content{
     padding: 0;
+    width: 100%;
+    text-align: center;
   }
 
   .hero-right {
     padding: 20px;
     border-radius: 15px;
+    width: 100%;
+  }
+
+  .hero-right-star{
+    display: none;
   }
 
   .hero-image .voyageuse{
     width: 100%;
     height: 70%;
     position: relative;
-    top: 1.4rem;
-    left: 1.3em;
+    top: 8rem;
   }
 
   .hero-image .arrow{
@@ -102,12 +153,34 @@
   .price-rating .price {
     font-size: 0.9rem;
   }
+
   .reservation-section {
-    flex-direction: column;
+    flex-direction: column; 
+    text-align: center;
+    padding: 1.5rem;
   }
 
   .reservation-container {
-    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .reservation-form {
+    grid-template-columns: 1fr; 
+  }
+
+  .reservation-btn {
+    grid-column: auto;
+    width: 100%; 
+  }
+
+  .reservation-image {
+    order: -1; 
+    margin-bottom: 1rem;
+  }
+
+  .form-group label {
+    text-align: left;
   }
 
   .hotel-container {
@@ -130,6 +203,7 @@
 
   .footer-item {
     text-align: center;
+    justify-content: start;
   }
 
   .social-icons {
@@ -149,6 +223,7 @@
   .footer-item form button {
     width: auto;
   }
+
   .footer-item h2,
   .footer-item h3 {
     font-size: 1.4rem;
@@ -161,6 +236,7 @@
   .social-icons a {
     font-size: 1.5rem;
   }
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -177,10 +253,11 @@
     width: 100px;
     font-size: 0.8rem;
   }
+
   .nav-links.active {
     display: flex;
   }
-
+  
   .burger-menu {
     display: block;
   }
@@ -192,51 +269,39 @@
   }
 
   .nav-links {
-    position: fixed;
-    left: -250px;
-    top: 25px;
-    width: 50vw;
-    height: 70vh;
-    background: white;
-    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
+    display: none;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: left 0.3s ease-in-out;
-    z-index: 999;
-    border-radius: 0 10px 10px 0;
+    position: absolute;
+    top: 80px;
+    right: 2%;
+    width: 96%;
+    background: var(--white-color);
+    border-radius: 10px;
+    padding: 15px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
   }
 
   .nav-links.active {
-    left: 0;
+    display: flex;
   }
 
   .nav-links li {
-    margin: 15px 0;
+    margin: 10px 0;
   }
 
   .nav-links a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: black;
-    font-weight: 700;
+    font-size: 1rem;
   }
 
   .burger-menu {
     display: block;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    position: relative;
-    z-index: 1000;
+    color: var(--black-color);
   }
 
-  .burger-menu.open i {
-    content: "\f00d";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    margin-top: 50px;
+  .signout-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
   }
+
 }
